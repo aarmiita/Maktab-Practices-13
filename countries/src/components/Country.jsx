@@ -9,6 +9,7 @@ const Country = () => {
     weather: [{ id: 1, main: "none", description: "none" }],
   });
   const [country, setCountry] = useState([]);
+
   // const APIKEY = "817f8da2a5c7dadfac962c3a856a6086";
   const { capital } = useParams();
   useEffect(() => {

@@ -85,7 +85,6 @@ const Country = () => {
                   <h5>
                     Capital:<span>{capital}</span>
                   </h5>
-                  <h4>{theme}</h4>
                   <div className="country-detailes-div">
                     <h5>
                       Currencies:<span>{currencies[0].name}</span>

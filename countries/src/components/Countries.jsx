@@ -59,7 +59,6 @@ const Countries = () => {
                   <h4>
                     capital:<span>{capital}</span>
                   </h4>
-                  <h4>{theme}</h4>
                   <div className="buttons">
                     <Link to={`/countries/${capital}`} className="btn">
                       Read More

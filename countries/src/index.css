@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 
 * {
   margin: 0;
@@ -11,74 +11,176 @@ img.countryImg {
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: #202d36;
   color: #fff;
+}
+.buttons {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+.btn {
+  background-color: hsl(207, 26%, 17%);
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid hsl(207, 26%, 17%);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: hsl(207, 26%, 17%);
+}
+.dark-mode {
+  width: 80px;
+  height: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 40px;
+  background-color: rgb(224, 224, 224);
+}
+.light-mode {
+  background-color: hsl(207, 26%, 17%);
+}
+.fa-moon-light {
+  color: rgb(224, 224, 224);
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #2b3743;
+  padding: 10px 20px;
+  height: 100px;
+}
+.header-light {
+  background-color: rgb(224, 224, 224);
+  color: #202d36;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b3743;
+  padding: 10px 20px;
+  height: 100px;
+}
+.footer-light {
+  background-color: rgb(224, 224, 224);
+  color: #202d36;
+}
+.dark-weather {
+  background-color: #2b3743;
+  color: #fff;
+}
+.light-weather {
+  background-color: rgb(224, 224, 224);
+  color: hsl(207, 26%, 17%);
 }
 .filter {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 20px 0;
+  padding: 20px;
+}
+.filter-light {
+  background-color: #fff;
+}
+.filter .form-control {
+  width: 100%;
 }
 .filter .form-control input {
   background-color: #2b3743;
   border: none;
   outline: none;
-  padding: 8px;
+  padding: 12px;
   border-radius: 5px;
   color: #fff;
   font-family: inherit;
   letter-spacing: 0.5px;
+  width: 100%;
+  margin: 0 0 30px;
+}
+.filter .form-control .input-light {
+  background-color: rgb(224, 224, 224);
+  color: hsl(207, 26%, 17%);
+}
+.filter .form-control .input-light::placeholder {
+  color: hsl(207, 26%, 17%);
 }
 .filter .form-control input::placeholder {
   color: #fff;
 }
-.grid {
+
+.container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  padding: 20px;
 }
-
-.grid article img.countryImg {
+.container-light {
+  background-color: #fff;
+}
+.container article img.countryImg {
   border-radius: 5px 5px 0 0;
 }
-.grid .details {
+.container .details {
   background-color: #2b3743;
   padding: 40px 20px;
   margin-top: -20px;
   border-radius: 0 0 5px 5px;
 }
-.grid .details h3 {
+.container .details h3 {
   padding-bottom: 10px;
 }
-.grid .details h4 {
+.container .details h4 {
   padding-bottom: 5px;
 }
-.grid .details h4 span {
+.container .details h4 span {
   font-weight: 300;
 }
+.container .details-light {
+  background-color: rgb(224, 224, 224);
+  color: #202d36;
+}
 @media (min-width: 640px) {
-  .grid {
+  .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 768px) {
-  .grid {
+  /* .filter {
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+  /* .filter .form-control {
+    width: auto;
+  }
+  .filter .form-control input {
+    width: auto;
+    margin: 0;
+  } */
+
+  .container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 992px) {
-  body {
-    padding: 50px 100px;
+  .container,
+  .filter,
+  .header {
+    padding: 20px 100px;
   }
-  .grid {
+  .container {
     grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -113,7 +113,11 @@ const Country = () => {
               </article>
             );
           })}
-          <div className={theme === "light" ? "light-weather" : "dark-weather"}>
+          <div
+            className={`weather-details ${
+              theme === "light" ? "light-weather" : "dark-weather"
+            }`}
+          >
             <h1>Weather:</h1>
             {countryWeather.weather.map((w) => {
               const { id, main, description } = w;

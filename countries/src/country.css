@@ -59,6 +59,9 @@
 .country article .country-detailes span {
   font-weight: 300;
 }
+.weather-details span {
+  font-weight: 300;
+}
 
 .country article .borders ul {
   list-style: none;

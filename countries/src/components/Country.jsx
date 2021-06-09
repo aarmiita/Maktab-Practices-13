@@ -7,6 +7,7 @@ const Country = () => {
   const { theme } = useContext(ThemeContext);
   const [countryWeather, setCountryWeather] = useState({
     weather: [{ id: 1, main: "none", description: "none" }],
+    wind: { speed: 0, deg: 0 },
   });
   const [country, setCountry] = useState([]);
 
@@ -127,7 +128,9 @@ const Country = () => {
                 </div>
               );
             })}
-            {/* <h4>{countryWeather.wind.speed}</h4> */}
+            <h4>
+              wind's speed: <span>{countryWeather.wind.speed}</span>
+            </h4>
           </div>
         </section>
       </div>

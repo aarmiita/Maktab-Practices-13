@@ -7,7 +7,7 @@ const SubCountry = ({ country }) => {
 
   const { name, numericCode, population, region, capital, flag } = country;
   return (
-    <article className="subCountry" key={numericCode}>
+    <article className="subCountry">
       <div className={`details ${theme === "light" ? "details-light" : ""}`}>
         <img className="countryImg" src={flag} alt={name} />
 

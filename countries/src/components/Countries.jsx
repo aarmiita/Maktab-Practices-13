@@ -37,7 +37,8 @@ const Countries = () => {
             }
           })
           .map((country) => {
-            return <SubCountry country={country} />;
+            const { numericCode } = country;
+            return <SubCountry country={country} key={numericCode} />;
           })}
       </section>
     </>

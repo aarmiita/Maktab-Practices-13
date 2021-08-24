@@ -1,3 +1,31 @@
+#screen shots
+<h3>Click to view the fullsize images</h3>
+<table>
+  <tr>
+    <td>
+      <img src="./screenshots/1.png">
+    </td>
+     <td>
+      <img src="./screenshots/2.png">
+    </td>
+     <td>
+      <img src="./screenshots/3.png">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./screenshots/4.png">
+    </td>
+       <td>
+      <img src="./screenshots/5.png">
+    </td>
+       <td>
+      <img src="./screenshots/6.png">
+    </td>
+  </tr>
+  </table>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

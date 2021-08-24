@@ -1,5 +1,5 @@
 # screen shots
-<h3>Click to view the fullsize images</h3>
+<h3>Click to view the fullsize image</h3>
 <table>
   <tr>
     <td>
